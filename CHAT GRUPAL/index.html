@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Logo del proyecto -->
+    <div id="welcome-screen">
+      <h1 class="welcome-text">¡Bienvenido!</h1>
+    </div>
+    <div id="project-logo">
+        <img src="assets/img/orbitnegro.png" alt="Orbit">
+    </div>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+
+        <h3>Elige un ícono:</h3>
+        <div id="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/256/6997/6997658.png" class="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/256/8388/8388392.png" class="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" class="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" class="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" class="avatar-options">
+          <img src="https://cdn-icons-png.flaticon.com/512/8090/8090469.png" class="avatar-options">
+        </div>
+        <button id="deselect-avatar">Deseleccionar Avatar</button>
+
+        <label class="custom-file-upload">
+            Subir Imagen
+            <input type="file" id="photo" accept="image/*">
+        </label>
+        <div id="photo-preview" style="display:none;">
+          <img id="preview-img" src="" alt="preview">
+          <button id="remove-photo">Eliminar imagen</button>
+        </div>
+
+        <button id="start-btn" disabled>Iniciar sesión</button>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
+
